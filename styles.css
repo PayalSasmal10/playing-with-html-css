@@ -1,0 +1,33 @@
+.parent{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.children{
+    width: 25%;
+    height: 97vh;
+    background-color: aqua;
+    margin: 2px 8px;
+}
+
+@media screen and (max-width:640px){
+    .parent{
+        display: unset;
+    }
+    .children{
+        width: 45%;
+        height: 50vh;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:350px){
+    .parent{
+        flex-direction: column;
+    }
+    .children{
+        width: 90%;
+        height: 50vh;
+    }
+
+}
